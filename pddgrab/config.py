@@ -10,7 +10,7 @@ from pathlib import Path
 # ---------------------------------------------------------------- 手机
 PKG = "com.xunmeng.pinduoduo"
 # 2026-10-27：USB 调试口会反复瞬断，改用无线 adb；用环境变量覆盖即可
-ADB_SERIAL = os.environ.get("PDD_ADB_SERIAL", "8a316fdb")
+ADB_SERIAL = os.environ.get("PDD_ADB_SERIAL", "")   # 留空=自动探测
 FRIDA_HOST = os.environ.get("PDD_FRIDA_HOST", "127.0.0.1:28080")
 FRIDA_PORT = int(os.environ.get("PDD_FRIDA_PORT", "28080"))
 FRIDA_BIN = os.environ.get("PDD_FRIDA_BIN", "/data/local/tmp/.x99")

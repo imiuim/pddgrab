@@ -30,7 +30,7 @@ def _candidate_serials():
     env = os.environ.get("PDD_ADB_SERIAL")
     if env:
         out.append(env)
-    wifi = os.environ.get("PDD_WIFI_ADDR", "192.168.31.7:5555")
+    wifi = os.environ.get("PDD_WIFI_ADDR", "")   # 例：192.168.1.50:5555
     if wifi:
         out.append(wifi)
     if config.ADB_SERIAL and config.ADB_SERIAL not in out:
@@ -66,7 +66,7 @@ def serial(refresh: bool = False) -> str:
             continue
     # 无线地址没连上就试着连一次
     import os
-    wifi = os.environ.get("PDD_WIFI_ADDR", "192.168.31.7:5555")
+    wifi = os.environ.get("PDD_WIFI_ADDR", "")   # 例：192.168.1.50:5555
     try:
         subprocess.run([exe, "connect", wifi], capture_output=True, text=True, timeout=15)
         p = subprocess.run([exe, "-s", wifi, "get-state"],

@@ -23,13 +23,11 @@
 | [05-实战复盘-20261027](05-实战复盘-20261027.md) | 从 4 场全败到抢到的完整推理链 | 想知道「为什么这么设计」 |
 | [06-模块与用法](06-模块与用法.md) | 模块职责、CLI、代码示例 | 要复用/改代码 |
 
-旧文档（10-09 那轮，仍有参考价值）：
+旧文档：
 
 * [api-grab.md](api-grab.md) —— 最早把「模拟点击」换成「走接口」的记录，
   包含 mecox/classloader 的首次踩坑、接口全貌、`useNativeAntiToken` 的发现。
-* [pdd-grab.md](pdd-grab.md) —— 更早的 UI 模拟点击路线（已废弃，仅作历史）。
-* [cloud-panel.md](cloud-panel.md) —— 云控面板。
-* [handover-section-17.md](handover-section-17.md) —— 交接文档第 17 节。
+
 
 ---
 
